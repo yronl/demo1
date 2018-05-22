@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="applicable-device" content="mobile">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <script src="js/auto.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<div class="install">
+    <img src="images/top.png" alt="" class="install-top">
+    <div>
+        <img src="images/logoo.jpg" alt="" class="logoo">
+    </div>
+    <div class="apple">
+        <p><img src="images/apple.jpg" alt="">撩园2期测试版  <span>企业版</span></p>
+        <p class="zi">版本：2.0（build 16）  大小：9.9MB</p>
+        <p class="zi">更新时间： 1小时前</p>
+        <p class="liao-qr">
+            <a href="" class="load-qr">
+                <img src="images/liao.png" alt="">
+            </a>
+        </p>
+        <a class="hand" id="hand">
+            <img src="images/hand.jpg" alt="">"未受信任的企业级开发者"的解决办法
+        </a>
+
+        <div>
+        <button class="load-btn">
+            点击安装
+        </button>
+        </div>
+        <p class="zi-b">或者用手机扫描二维码安装</p>
+    </div>
+
+</div>
+<div class="install-popup" id="popup">
+    <a class="xx" id="xx"></a>
+
+        <div class="popup-warp">
+            <div class="high">
+                <img src="images/tan.png" alt="">重点提示
+                <p> (请仔细阅读以下步骤，不然安装后APP无法使用) </p>
+            </div>
+            <div class="step">
+                <p>1.APP安装后，打开软件会弹出如下页面提示：</p>
+                <img src="images/step1.png" alt="" class="step1">
+                <p>2.点击取消后，打开设置—通用—设备管理，点击信
+                    任，就能正常使用APP了！具体操作流程如下：
+                </p>
+                <img src="images/step2.png" alt="" class="step2">
+                <p>
+                    3.完成以上步骤后就能打开软件了
+                </p>
+                <span>（先记住设置步骤，安装成功后，才能按步骤去设置）</span>
+            </div>
+
+        </div>
+
+</div>
+<script>
+    $(function(){
+        $("#xx").click(function(){
+            $("#popup").hide()
+        });
+        $("#hand").click(function(){
+            $("#popup").show()
+        })
+    })
+
+
+</script>
+</body>
+</html>
